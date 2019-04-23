@@ -4,7 +4,7 @@ go 1.12
 
 require (
 	github.com/nsf/gocode v0.0.0-20190302080247-5bee97b48836 // indirect
-	github.com/sqs/goreturns v0.0.0-20181028201513-538ac6014518 // indirect
+	github.com/sqs/goreturns v0.0.0-20181028201513-538ac6014518
 	golang.org/x/text v0.3.0 // indirect
 	rsc.io/quote v1.5.2
 )
@@ -16,5 +16,6 @@ replace (
 	golang.org/x/sync => github.com/golang/sync v0.0.0-20190412183630-56d357773e84
 	golang.org/x/sys => github.com/golang/sys v0.0.0-20190418153312-f0ce4c0180be
 	golang.org/x/text => github.com/golang/text v0.3.0
+
 	google.golang.org/appengine => github.com/golang/appengine v1.5.0
 )

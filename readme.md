@@ -27,5 +27,6 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 ```bash
 go get github.com/nsf/gocode
+go get github.com/tools/imports
 go get github.com/sqs/goreturns
 ```
