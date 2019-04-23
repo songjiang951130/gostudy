@@ -1,6 +1,6 @@
 ### 学习go语言的项目
 
-环境： `mac pro`，` 
+环境: `mac pro` , 编译器 `VS CODE` , 安装器 `homebrew`
 
 go version : 1.12.4，
 mac os 上 brew 安装
@@ -8,7 +8,7 @@ mac os 上 brew 安装
 brew install go@1.12
 ```
 
-构建方式 ： mod
+构建方式 : mod
 
 go [环境变量配置](config/bash_profile.md)
 
