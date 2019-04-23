@@ -1,4 +1,4 @@
-### 学习go语言的项目
+### 学习 go 语言的项目
 
 环境: `mac pro` , 编译器 `VS CODE` , 安装器 `homebrew`
 
@@ -10,7 +10,7 @@ brew install go@1.12
 
 构建方式 : mod
 
-go [环境变量配置](config/bash_profile.md)
+go [环境变量配置](config/bash_profile.md)
 
 ```bash
 #GOROOT 为 /libexec 这文件夹
