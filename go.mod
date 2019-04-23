@@ -3,12 +3,13 @@ module github.com/songjiang951130/gostudy
 go 1.12
 
 require (
+	github.com/nsf/gocode v0.0.0-20190302080247-5bee97b48836 // indirect
+	github.com/sqs/goreturns v0.0.0-20181028201513-538ac6014518 // indirect
 	golang.org/x/text v0.3.0 // indirect
 	rsc.io/quote v1.5.2
 )
 
 replace (
-	//github.com/songjiang951130/gostudy >> /Users/elong/Documents/project/gomodproject v1.0.0
 	cloud.google.com/go => github.com/GoogleCloudPlatform/google-cloud-go v0.37.4
 	golang.org/x/crypto => github.com/golang/crypto v0.0.0-20190418165655-df01cb2cc480
 	golang.org/x/net => github.com/golang/net v0.0.0-20190419010253-1f3472d942ba

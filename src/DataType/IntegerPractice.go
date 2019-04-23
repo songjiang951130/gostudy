@@ -1,0 +1,5 @@
+package DataType
+
+func init()  {
+	
+}

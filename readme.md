@@ -22,3 +22,10 @@ export GO111MODULE=auto
 export GOPROXY=https://goproxy.io
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 ```
+
+### ide 辅助安装
+
+```bash
+go get github.com/nsf/gocode
+go get github.com/sqs/goreturns
+```
