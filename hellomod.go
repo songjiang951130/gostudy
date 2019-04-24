@@ -15,6 +15,8 @@ func main() {
 	fmt.Println(val)
 	digits := "23"
 	// var result [] string = 
+	var str string = string(47+digits[0])
+	fmt.Println(str)
 	letterCombinations(digits)
 	// for i := 0; i < len(result); i++ {
     //     fmt.Println(result[i])
@@ -22,16 +24,16 @@ func main() {
 	
 }
 
+
 func letterCombinations(digits string)  {
 	fmt.Println(len(digits))
 	distance :=47
 	result := make([]string, len(digits)*3) 
 	fmt.Println(result)
 	for index := 0; index <3 ; index++ {
-		fmt.Println(digits[index])
-		var temp string
+		var temp string = ""
 		for j := 0; j < len(digits); j++ {
-			temp + = string(index+digitsp[j])
+			temp  = temp + string(digits[j]+byte(distance+index))
 		}
 		fmt.Println("temp:",temp)
 
