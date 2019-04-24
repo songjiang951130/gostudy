@@ -2,12 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	"rsc.io/quote"
 )
 
 func main() {
-	fmt.Println(quote.Hello())
 	fmt.Println("hello,time99")
-	IntegerPractice
+	var val int = 10
+	fmt.Println(val)
 }
