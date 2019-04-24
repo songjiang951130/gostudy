@@ -1,5 +1,8 @@
 package DataType
 
-func init()  {
-	
+import "fmt"
+
+func Init() {
+	var val int = 10
+	fmt.Println(val)
 }
