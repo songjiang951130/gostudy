@@ -3,8 +3,8 @@ module github.com/songjiang951130/gostudy
 go 1.12
 
 require (
-	golang.org/x/text 
-	golang.org/x/tools
+	golang.org/x/text v0.3.0
+	golang.org/x/tools v1.2.3
 )
 
 replace (
@@ -23,7 +23,7 @@ replace (
 	golang.org/x/sys => github.com/golang/sys v0.0.0-20181116152217-5ac8a444bdc5
 	golang.org/x/text => github.com/golang/text v0.3.0
 	golang.org/x/time => github.com/golang/time v0.0.0-20180412165947-fbb02b2291d2
-	golang.org/x/tools => github.com/golang/tools v0.0.0-20181219222714-6e267b5cc78e
+	golang.org/x/tools => github.com/golang/tools v0.0.0-20190420181800-aa740d480789
 	google.golang.org/api => github.com/googleapis/google-api-go-client v0.0.0-20181220000619-583d854617af
 	google.golang.org/appengine => github.com/golang/appengine v1.3.0
 	google.golang.org/genproto => github.com/google/go-genproto v0.0.0-20181219182458-5a97ab628bfb
