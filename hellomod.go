@@ -6,7 +6,7 @@ import (
 )
 
 func Indexhandler(w http.ResponseWriter,r *http.Request)  {
-    fmt.Fprintln(w,"hello world")
+    fmt.Fprintln(w,"hello world 222")
 }
 
 func main() {
@@ -14,5 +14,5 @@ func main() {
 	var val int = 10
 	fmt.Println(val)
 	http.HandleFunc("/",Indexhandler)
-    http.ListenAndServe("127.0.0.1",nil)
+	http.ListenAndServe("127.0.0.1:9092",nil)
 }
