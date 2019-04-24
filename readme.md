@@ -27,7 +27,11 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 ```bash
 go get -u -v golang.org/x/tools/cmd/gopls
-go get github.com/nsf/gocode
-go get github.com/tools/imports
-go get github.com/sqs/goreturns
+go get -u -v github.com/nsf/gocode
+//下载失败
+go get -u -v github.com/tools/imports
+go get -u -v github.com/sqs/goreturns
+go get -u golang.org/x/lint/golint
+//手动安装
+go install golang.org/x/lint/golint
 ```
