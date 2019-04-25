@@ -5,8 +5,8 @@ import (
 	"net/http"
 )
 
-func Indexhandler(w http.ResponseWriter,r *http.Request)  {
-    fmt.Fprintln(w,"hello world 222")
+func Indexhandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "hello world 222")
 }
 
 func main() {
@@ -14,26 +14,26 @@ func main() {
 	var val int = 10
 	fmt.Println(val)
 	digits := "23"
-	// var result [] string = 
+	// var result [] string =
 	letterCombinations(digits)
 	// for i := 0; i < len(result); i++ {
-    //     fmt.Println(result[i])
+	//     fmt.Println(result[i])
 	// }
-	
+
 }
 
-func letterCombinations(digits string)  {
+func letterCombinations(digits string) {
 	fmt.Println(len(digits))
-	distance :=47
-	result := make([]string, len(digits)*3) 
+	distance := 47
+	result := make([]string, len(digits)*3)
 	fmt.Println(result)
-	for index := 0; index <3 ; index++ {
-		fmt.Println(digits[index])
+	for j := 0; j < len(digits); j++ {
 		var temp string
-		for j := 0; j < len(digits); j++ {
-			temp + = string(index+digitsp[j])
+		for index := 0; index < 3; index++ {
+			temp = temp + string(digits[j]+byte(distance+index))
+			fmt.Println("j:", j, string(digits[j]+byte(distance+index)))
 		}
-		fmt.Println("temp:",temp)
+		fmt.Println("temp:", temp)
 
 	}
 }
