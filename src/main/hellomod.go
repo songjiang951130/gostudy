@@ -6,10 +6,20 @@ import (
 
 func main() {
 	digits := "24"
+
 	letterCombinations(digits)
 }
 
 func letterCombinations(digits string) {
+	numberMapping := make([]string, 10)
+	numberMapping[2] = "abc"
+	numberMapping[3] = "def"
+	numberMapping[4] = "ghi"
+	numberMapping[5] = "jkl"
+	numberMapping[6] = "mno"
+	numberMapping[7] = "pqrs"
+	numberMapping[8] = "tuv"
+	numberMapping[9] = "wxyz"
 	fmt.Println(len(digits))
 	distance := 47
 	result := make([]string, len(digits)*3)
