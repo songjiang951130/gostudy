@@ -34,4 +34,7 @@ go get -u -v github.com/sqs/goreturns
 go get -u golang.org/x/lint/golint
 //手动安装
 go install golang.org/x/lint/golint
+
+//调试工具安装 executables built by Go 1.11 or later need Delve built by Go 1.11 or later
+go get -u github.com/go-delve/delve/cmd/dlv
 ```
