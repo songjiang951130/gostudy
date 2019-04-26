@@ -1,17 +1,19 @@
 package main
 
 import (
+	// "container/list"
 	"fmt"
+	"strconv"
 )
 
 func main() {
 	digits := "24"
-
-	letterCombinations(digits)
+	result := letterCombinations(digits)
+	fmt.Println(result)
 }
 
-func letterCombinations(digits string) {
-	numberMapping := make([]string, 10)
+func letterCombinations(digits string) []string {
+	numberMapping := make(map[int]string, 8)
 	numberMapping[2] = "abc"
 	numberMapping[3] = "def"
 	numberMapping[4] = "ghi"
@@ -21,26 +23,21 @@ func letterCombinations(digits string) {
 	numberMapping[8] = "tuv"
 	numberMapping[9] = "wxyz"
 	fmt.Println(len(digits))
-	distance := 47
-	result := make([]string, len(digits)*3)
-	fmt.Println(result)
-	for j := 0; j < len(digits); j++ {
-		// for index := 0; index < 3; index++ {
-		var temp string
-		for l := 0; l < len(digits); l++ {
-			temp = temp + string(digits[l]+byte(distance))
-		}
-		fmt.Println("j:", j, string(digits[j]+byte(distance)))
-		fmt.Println("temp:", temp)
-		// }
-	}
+	result := make([]string, 0)
+	fmt.Println(len(result), cap(result))
+
+	dfs(result, digits, numberMapping, "")
+	return result
 }
 
-func num2char(number int) []byte {
-	result := make([]byte, 3)
-	distance := 47
-	for index := 0; index < len(result); index++ {
-		result[index] = byte(number + distance)
+func dfs(result []string, digits string, numberMapping map[int]string, tmp string) {
+	if len(tmp) == len(digits) {
+		result = append(result, tmp)
 	}
-	return result
+	for _, ch := range digits {
+		key, _ := strconv.Atoi(string(ch))
+		value := numberMapping[key]
+		fmt.Println(key, value)
+	}
+
 }
