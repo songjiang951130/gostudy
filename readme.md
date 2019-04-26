@@ -37,4 +37,10 @@ go install golang.org/x/lint/golint
 
 //调试工具安装 executables built by Go 1.11 or later need Delve built by Go 1.11 or later
 go get -u github.com/go-delve/delve/cmd/dlv
+//vs code 代码分析工具
+gopkgs
+  go-outline
+  guru
+  gorename
+  godef
 ```
