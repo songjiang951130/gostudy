@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/songjiang951130/gostudy/Data/TreeNode"
+	// "Data"
+	"github.com/songjiang951130/gostudy/data/TreeNode"
 )
 
 
@@ -27,6 +28,16 @@ func hasPathSum(root *TreeNode, sum int) bool {
 	}
 	return hasPathSum(root.Left,sum)||hasPathSum(root.Right,sum)
 }
+func hasPathSum(root *TreeNode, sum int) int {
+	if root == nil {
+		return 0;
+	}
+	sum = sum - root.Val
+	if sum == 0 && root.Left ==nil && root.Right == nil{
+		return 1
+	}
+	return hasPathSum(root.Left,sum)+hasPathSum(root.Right,sum)
+}
 
 /**
 算上一个 有多少条路径和等于指定值的
@@ -40,5 +51,5 @@ func pathSum(root *TreeNode, sum int) int {
 	if sum == 0 && root.Left == nil && root.Right == nil{
 		rootSum = 1 
 	}
-	return rootSum + int32(hasPathSum(root.Left,sum))+int32(hasPathSum(root.Right,sum))
+	return rootSum + hasPathSum(root.Left,sum)+hasPathSum(root.Right,sum)
 }
