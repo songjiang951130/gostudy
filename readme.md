@@ -44,3 +44,4 @@ gopkgs
   gorename
   godef
 ```
+test
